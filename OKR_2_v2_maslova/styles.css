@@ -1,0 +1,170 @@
+
+body 
+{
+    background-color: white;
+    font-family: "bahnschrift";
+}
+
+/*HEADER*/
+.hat{
+    width:100%;
+}
+.logo
+{
+    width:150px;
+}
+.info_hat_block{
+    width:180px;
+}
+.burger_menu {
+    width: 0px;
+    height: 0px;
+    transform: scale(0);
+    font-size: 0;
+}
+.cart_icon{
+    width:15px;
+}
+.yellowtext{
+   color:#eeaa00;
+}
+
+
+/*MENU*/
+.menu {
+    width:100%;
+    background: linear-gradient(black, #333333);
+    height:40px;
+    flex:content;
+}
+.redline{
+    background-color:red;
+    height:5px;
+    width:100%;
+    z-index:1;
+}
+.search{
+    padding:10px;
+}
+.menu_links {
+    color: #eeaa00;
+}
+.yellow_cart {
+    width: 0px;
+    height: 0px;
+    transform: scale(0);
+    font-size: 0;
+}
+
+/*TEXT*/
+.tinytext
+{
+    font-size:9px;
+}
+
+
+/*PAGE*/
+.page_layout{
+    position:relative;
+}
+.page_layout div{
+    position:absolute;
+}
+.navigation_col {
+    font-size: 100%;
+    left:0;
+    right:20%;
+}
+.page_col{
+    left: 33%;
+    padding:20px;
+}
+select {
+    width: 0px;
+    height: 0px;
+    transform: scale(0);
+    font-size: 0;
+}
+
+@media all and (max-width:720px) 
+{
+    body {
+        font-size: 150%;
+    }
+    .info_hat{
+        font-size:60%;
+    }
+    .navigation_col {
+        font-size: 40%;
+    }
+    .page_col {
+        left: 40%;
+        padding: 20px;
+    }
+}
+@media all and (max-width:520px) {
+    .info_hat {
+        width: 0px;
+        height: 0px;
+        transform: scale(0);
+        font-size: 0;
+    }
+
+    .burger_menu {
+        width: 40px;
+        height: 40px;
+        transform: scale(1);
+        font-size: 10px;
+    }
+    .page_col{
+        left:40%;
+    }
+}
+@media all and (max-width:480px) 
+{
+    body {
+        font-size: 200%;
+    }
+    .menu_links {
+        width: 0px;
+        height: 0px;
+        transform: scale(0);
+        font-size: 0px;
+    }
+    .menu{
+        height:80px;
+    }
+    .search_bar{
+        left:0;
+        width:70%;
+        height:60px;
+        font-size:180%;
+    }
+    .yellow_cart {
+        width: 40px;
+        height: 40px;
+        transform: scale(1);
+        font-size: 10px;
+    }
+    .navigation_col {
+        width: 0px;
+        height: 0px;
+        transform: scale(0);
+        font-size: 0px;
+    }
+    .page_col {
+        left:0;
+        height:60px;
+        width: 96%;
+        padding:10px;
+        font-size: 24px;
+
+    }
+    select {
+        height: 60px;
+        width: 96%;
+        padding: 10px;
+        transform: scale(1);
+        font-size: 24px;
+    }
+}
