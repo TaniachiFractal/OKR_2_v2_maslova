@@ -1,3 +1,46 @@
+p {
+    margin: 3px;
+}
+
+.product_block {
+    float: left;
+    width: auto;
+    position: relative;
+    border: 2px solid gray;
+    padding: 10px;
+    margin: 5px;
+    flex-direction: column;
+}
+
+.product_image {
+    width: 100px;
+}
+
+.price {
+    width: 160px;
+}
+
+.buy_button {
+    background-color: #eeaa00;
+    width: 100px;
+    height: 40px;
+    font-family: "bahnschrift";
+    font-size: larger;
+    border: 0;
+}
+
+@media all and (max-width:650px) {
+    .product_image {
+        width: 50%;
+    }
+
+    .price {
+        width: 50%;
+    }
+}
+
+/*--------------------------------------*/
+
 
 body 
 {
