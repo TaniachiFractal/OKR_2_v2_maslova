@@ -1,25 +1,29 @@
 p {
-    margin: 3px;
+   margin: 3px;
 }
+ul{
+    width:400px;
+}
+.products{
+    position:relative;
+    width:80%;
+    transform: translateX(250px);
 
+}
 .product_block {
     float: left;
-    width: auto;
+    width:auto;
     position: relative;
     border: 2px solid gray;
     padding: 10px;
     margin: 5px;
-    flex-direction: column;
 }
-
 .product_image {
     width: 100px;
 }
-
 .price {
     width: 160px;
 }
-
 .buy_button {
     background-color: #eeaa00;
     width: 100px;
@@ -28,15 +32,24 @@ p {
     font-size: larger;
     border: 0;
 }
-
-@media all and (max-width:650px) {
+@media all and (max-width:480px) {
     .product_image {
         width: 50%;
     }
-
     .price {
-        width: 50%;
+        width: 60%;
     }
+    .products {
+        position: relative;
+        transform: translateX(0);
+    }
+    .product_block {
+        width:120%;
+    }
+}
+
+.footer{
+    
 }
 
 /*--------------------------------------*/
@@ -109,14 +122,16 @@ body
 /*PAGE*/
 .page_layout{
     position:relative;
+    float:left;
 }
 .page_layout div{
     position:absolute;
 }
 .navigation_col {
     font-size: 100%;
+    width:30%;
     left:0;
-    right:20%;
+    right:30%;
 }
 .page_col{
     left: 33%;
@@ -204,10 +219,15 @@ select {
 
     }
     select {
+        position:absolute;
         height: 60px;
-        width: 96%;
+        width: 88%;
         padding: 10px;
+        margin: 5px;
         transform: scale(1);
         font-size: 24px;
+    }
+    .products {
+        width: 80%;
     }
 }
